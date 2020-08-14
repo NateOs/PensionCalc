@@ -1,0 +1,36 @@
+﻿<html>
+  <head>
+    <style>
+      .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: auto;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: auto;
+        cursor: pointer;
+        height: auto;
+        width: auto;
+      }
+    </style>
+    <meta charset="UTF-8">
+    <title>Pension</title>
+  </head>
+  <body onload="maxWidth()">
+    <h1> Pension Year 🔢</h1>
+        <div>
+            <form oninput="calc()" id="pension-form">
+                    <input type="text" placeholder="Please enter age"  id="ageInput">
+                    <input type="text" placeholder="In years" readonly="readonly" id="result">
+                    <input type="text" placeholder="In months" background="grey" readonly="readonly" id="resultinmonths">
+
+                    <button class="button" type="button" onclick="calc()">Calculate</button>            
+            </form>
+    </div>
+    <h2 id="message"></h2>
+</body>
+  <script src="script.js"></script>
+</html>
